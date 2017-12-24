@@ -1,0 +1,3 @@
+[console_scripts]
+psql2csv = psql2csv.cli:main
+

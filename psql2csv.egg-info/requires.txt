@@ -1,0 +1,3 @@
+nprint
+click
+psycopg2

@@ -12,9 +12,9 @@ pip3 install psql2csv
 
 ### API
 There are 3 runnable functions:
-* download_all
-* download_schema
-* download_table
+* [download_all](#download_all)
+* [download_schema](#download_schema)
+* [download_table](#download_table)
 
 
 #### download_all
