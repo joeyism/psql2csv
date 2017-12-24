@@ -1,6 +1,6 @@
 from .database import DataBase
-import os
 from nprint import nprint
+import os
 
 def get_all_schemas(db):
     return db.fetchall("select nspname from pg_catalog.pg_namespace")
