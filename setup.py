@@ -31,6 +31,7 @@ setup(
     version = version,
     description = "A library and a CLI to download PostgreSQL schemas and tables",
     long_description = long_descr,
+    download_url = 'https://github.com/joeyism/linkedin_scraper/dist/'+version+'.tar.gz',
     author = "Joey Sham",
     author_email = "sham.joey@gmail.com",
     url = "http://www.joeyism.com",
