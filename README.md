@@ -15,6 +15,8 @@ To run the CLI normally, just run
 psql2csv
 ```
 
+which, by default, downloads the entire database of all schemas and all of its tables into a folder called `output/`. If your database is large, THIS IS NOT RECOMMENDED. To specify the details, see the options below.
+
 ```bash
 Options:
   --dbname TEXT    The database name
@@ -26,6 +28,18 @@ Options:
   --table          Downloads a table
   --stdout         Whether to print which schema and table is downloading
   --help           Show this message and exit.
+```
+
+For example, downloading a specific table can be done by running
+
+```bash
+psql2csv --table
+```
+
+and downloading all tables in a schema can be done by running
+
+```bash
+psql2csv --schema
 ```
 
 ## API
