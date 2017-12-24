@@ -1,3 +1,0 @@
-nprint
-click
-psycopg2

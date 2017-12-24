@@ -2,3 +2,6 @@ run.py
 *.swp
 __pycache__
 output
+build
+dist
+psql2csv.egg-info
