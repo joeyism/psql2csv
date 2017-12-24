@@ -8,6 +8,26 @@ pip3 install psql2csv
 
 # Usage
 
+## CLI
+To run the CLI normally, just run
+
+```bash
+psql2csv
+```
+
+```bash
+Options:
+  --dbname TEXT    The database name
+  --host TEXT      URL Endpoint of the database
+  --user TEXT      Login username
+  --password TEXT  Login password
+  --all            Downloads everything
+  --schema         Downloads a schema
+  --table          Downloads a table
+  --stdout         Whether to print which schema and table is downloading
+  --help           Show this message and exit.
+```
+
 ## API
 
 There are 3 runnable functions:
