@@ -49,6 +49,10 @@ Downloads table by specifying schema and table
 
 ## Versions
 
-**1.0.0**
+**1.1.x**
+
+* Added CLI
+
+**1.0.x**
 
 * First publish

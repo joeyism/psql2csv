@@ -3,4 +3,4 @@ from .download import download_schema
 from .download import download_all
 from .database import DataBase
 
-__version__ = "1.0.1"
+__version__ = "1.1.0"
