@@ -4,26 +4,24 @@ psql2csv
 A library and a CLI to download PostgreSQL schemas and tables
 
 Installation
-------------
+============
 
 .. code:: bash
 
     pip3 install psql2csv
 
 Usage
------
-
-CLI
-~~~
+=====
 
 API
-~~~
+---
 
-There are 3 runnable functions: \* download_all \* download_schema \*
-download_table
+There are 3 runnable functions: \* `download_all <#download_all>`__ \*
+`download_schema <#download_schema>`__ \*
+`download_table <#download_table>`__
 
 download_all
-^^^^^^^^^^^^
+~~~~~~~~~~~~
 
 **download_all**\ (conn, output_folder=‘output’,
 exclude_schemas=[‘pg_toast’, ‘pg_temp_1’, ‘pg_toast_temp_1’,
@@ -40,7 +38,7 @@ Downloads all schemas and all its tables by specifying schema
    = print
 
 download_schema
-^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~
 
 **download_schema**\ (conn, schema, output_folder=‘output’,
 stdout=False)
@@ -55,7 +53,7 @@ Downloads schema and its tables by specifying schema
    = print
 
 download_table
-^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~
 
 **download_table**\ (conn, schema, table, output_folder=‘output’,
 stdout=False)
@@ -71,3 +69,7 @@ Downloads table by specifying schema and table
 
 Versions
 --------
+
+**1.0.0**
+
+-  First publish
