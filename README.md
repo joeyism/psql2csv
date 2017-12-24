@@ -60,6 +60,14 @@ Downloads all schemas and all its tables by specifying schema
 * exclude_schemas: Which schemas to exclude while downloading everything
 * stdout: whether to print which schema and table is downloading. True = print
 
+```python
+from psql2csv import download_all
+import psycopg2
+
+conn = psycopg2.connect("dbname='dbname' user='username' host='url' password='password'")
+download_all(conn)
+```
+
 ### download_schema
 **download_schema**(conn, schema, output_folder='output', stdout=False)
 
@@ -69,6 +77,14 @@ Downloads schema and its tables by specifying schema
 * schema: name of the schema to download
 * output_folder: the name of the folder to place the data
 * stdout: whether to print which schema and table is downloading. True = print
+
+```python
+from psql2csv import download_schema
+import psycopg2
+
+conn = psycopg2.connect("dbname='dbname' user='username' host='url' password='password'")
+download_schema(conn, "schema_name")
+```
 
 ### download_table
 **download_table**(conn, schema, table, output_folder='output', stdout=False)
@@ -80,6 +96,14 @@ Downloads table by specifying schema and table
 * table: name of the table to download
 * output_folder: the name of the folder to place the data
 * stdout: whether to print which table is downloading. True = print
+
+```python
+from psql2csv import download_table
+import psycopg2
+
+conn = psycopg2.connect("dbname='dbname' user='username' host='url' password='password'")
+download_table(conn, "schema_name", "table_name")
+```
 
 ## Versions
 
