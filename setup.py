@@ -26,7 +26,7 @@ setup(
     name = "psql2csv",
     packages = ["psql2csv"],
     entry_points = {
-        "console_scripts": ['psql2csv = psql2csv.psql2csv:main']
+        "console_scripts": ['psql2csv = psql2csv.cli:main']
         },
     version = version,
     description = "A library and a CLI to download PostgreSQL schemas and tables",
